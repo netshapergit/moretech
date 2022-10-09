@@ -1,0 +1,28 @@
+{% extends '_.new' %}
+
+{% block title %}
+	{$ parent() $}
+	{% if site.field_name %}
+		| {$ site.field_name $}
+	{% endif %}
+{% endblock %}
+
+{% block head %}
+	{$ parent() $}
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="/site/theme/css/base.css">
+	<link rel="stylesheet" href="/site/theme/css/style.css">
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.js"></script>
+	<script src="/site/theme/js/style.js"></script>
+	 <script src="/site/theme/js/base.js"></script>
+
+	<script src="/site/theme/js/particles.js"></script>
+	<script src="/site/theme/js/particlessettings.js"></script>
+	<script src="/site/theme/js/parallax.js"></script>
+
+	<script src="/site/theme/js/calendar.js"></script>
+
+{% endblock %}
